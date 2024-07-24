@@ -1,0 +1,580 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+:root{
+  --body-bg-color: #000000;
+  --text-color: #ffff;
+  --primary-color: #1391AD;
+  --accent-color: #F4CD00;
+}
+body, html {
+  background: var(--body-bg-color);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: var(--body-bg-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 24px;
+}
+.menu-icon{
+  display: none
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav a {
+  padding: 20px 30px;
+  color: var(--text-color);
+  text-decoration: none;
+}
+.hero {
+  position: relative;
+  color: var(--text-color);
+}
+.hero-image{
+  padding-left: 200px;
+}
+.hero-image img{
+  border-radius: 30px;
+  align-items: center;
+  height: 600px;
+  width: 85%;
+
+}
+.hero-text {
+  padding-left: 200px;
+  display: flex;
+}
+
+.hero-text h1 {
+  font-size: 45px;
+}
+
+.hero-text p {
+  color: var(--text-color);
+  font-size: 15px;
+  padding: 30px 110px;
+  max-width: 400px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 15px 0;
+}
+
+.feature {
+  font-size: 23px;
+}
+
+.fitness-solution {
+  display: flex;
+  color: var(--text-color);
+  flex-wrap: wrap;
+  height: 150vh;
+  background: linear-gradient(
+    to top,
+    rgb(19, 68, 55) 0%,
+    rgb(26, 90, 65) 50%,
+    rgb(0, 0, 0) 50%,
+    rgb(0, 0, 0) 100%
+  );
+}
+.fitness-image{
+  padding-left: 200px;
+  padding-top: 70px;
+}
+.fitness-image img{
+  border-radius: 30px;
+  align-items: center;
+  height: 800px;
+  width: 110%;
+
+}
+.fitness-text{
+  padding-left: 200px;
+ }
+.fitness-text h2 {
+  color: var(--text-color);
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+.fitness-text p {
+  color: var(--text-color);
+  font-size: 25px;
+  max-width: 400px;
+}
+
+.fitness-text button {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact-card {
+  color: var(--body-bg-color);
+  background: var(--text-color);
+  border-radius: 10px;
+  margin: 70px;
+  padding: 10px; 
+  height: 20%;
+  }
+
+.contact-card h3 {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.contact-card ul {
+  list-style: none;
+  padding: 10px;
+}
+
+.contact-card li {
+  padding-bottom: 20px;
+}
+
+.contact-card li strong {
+  width: 80px;
+}
+.about{
+  background: var(--bg-color);
+  display: flex;
+  padding-top: 50px;
+}
+.image{
+  padding-top: 5rem;
+  padding-left: 15rem;
+}
+ .image img{
+  width: 436px;
+  height: 154px;
+  left: 96px;
+  top: 2144px;
+  border-radius: 214px;
+}
+.about-text{
+  padding-top: 3rem;
+  padding-left: 10rem;
+}
+.about-text h1{
+  color: var(--text-color);
+  font-size: 3rem;
+}
+.about-text p{
+  color: var(--text-color);
+}
+.trainers {
+  background: var(--body-bg-color);
+  height: 80vh;
+  padding: 50px;
+}
+.trainer-cards {
+  display: grid;
+  gap: 1.5rem;
+  margin: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+  /* display: flex; */
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.trainer-card {
+  background-color: var(--body-bg-color);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 30px;
+}
+
+.trainer-card h3 {
+  color: var(--text-color);
+  font-size: 18px;
+}
+
+.trainer-card img {
+    width: 270px;
+    height: 450px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+ .heading{
+  font-size: 30px;
+  color: var(--text-color);
+  text-align: center;
+ }
+ .customers{
+  background: var(--body-bg-color);
+  height: 80vh;
+  padding: 50px;
+ }
+.customers-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.customers-container .box{
+  margin: 40px;
+  padding: 35px;
+  box-shadow: var(--box-shadow);
+  border-radius: 0.5rem;
+  width: 400px;
+  background: var(--text-color);
+}
+.customers-container .box img{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.customers-container .box h2{
+  display: flex;
+}
+.customers-container .box h2, p{
+  color: var(--body-bg-color);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0.5rem 0.5rem;
+}
+.customers-container .box:hover{
+  background: #c7ecee;
+  transition: 0.2s all linear;
+}
+.cta {
+  background-color: #00A5C4;
+  color: white;
+  padding: 30px 110px;
+  display: flex;
+}
+
+.cta h2 {
+  font-size: 30px;
+  padding: 70 50px;
+  /* padding-bottom: 0px; */
+}
+.btn {
+  text-align: center;
+  background: var(--accent-color);
+  color: #fff;
+  display: flex;
+  position: absolute;
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-size: 20px;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+/* .cta button {
+  float: left;
+  background-color: #00C4A7;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+} */
+footer {
+  background-color: #0a3d62;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+.footer{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+  gap: 1.5rem; 
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo{
+  text-align: center;
+  font-size: 30px;
+}
+
+.footer-info ul{
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  list-style: none;
+  display: flex;
+  text-align: center;
+}
+.footer-info ul li{
+  padding: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--text-color);
+}
+.footer-copyright {
+  font-size: 20px;
+  margin-top: 10px;
+}
+/* Responsive Styles */
+@media (max-width: 1050px) {
+  
+  /* Header */
+  header{
+    width: 50%;
+  }
+  .logo {
+      font-size: 2rem;
+  }
+  .navbar li a {
+      font-size: 1rem;
+  }
+
+  /* Hero Section */
+  .hero-text h1 {
+      font-size: 2rem;
+  }
+  .hero-text p {
+      font-size: 1rem;
+  }
+
+  /* Features Section */
+  .features .feature {
+      font-size: 1rem;
+  }
+
+  /* Fitness Solution Section */
+  .fitness-text h2 {
+      font-size: 1.8rem;
+  }
+  .fitness-text p {
+      font-size: 1rem;
+  }
+
+  /* About Section */
+  .image img, .about-text{
+    width: 50%;
+  }
+  .about-text h1 {
+      font-size: 1.8rem;
+  }
+  .about-text p {
+      font-size: 1rem;
+  }
+
+  /* Trainers Section */
+  .trainer-cards{
+    width: 50%;
+  }
+  .trainer-card h3 {
+      font-size: 1.2rem;
+  }
+  .trainer-card p {
+      font-size: 1rem;
+  }
+
+  /* Review Section */
+  .customers-container{
+    width: 50%;
+  }
+  .box h2 {
+      font-size: 1.2rem;
+  }
+  .box p {
+      font-size: 1rem;
+  }
+/* Call to Action Section */
+  .cta h2 {
+      font-size: 1.8rem;
+  }
+  .cta .btn {
+      font-size: 1rem;
+  }
+
+  /* Footer Section */
+  .footer-logo h3 {
+      font-size: 1.8rem;
+  }
+  .footer-info li {
+      font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Header */
+  .header-right{
+    display: none;
+  }
+  .menu-icon{
+    display: block;
+  }
+  .logo {
+      font-size: 1.5rem;
+  }
+  .navbar li a {
+      font-size: 0.9rem;
+  }
+
+  /* Hero Section */
+  .hero-image img {
+      width: 100%;
+  }
+  .hero-text h1 {
+      font-size: 1.8rem;
+  }
+  .hero-text p {
+      font-size: 0.9rem;
+  }
+
+  /* Features Section */
+  .features .feature {
+      font-size: 0.9rem;
+  }
+
+  /* Fitness Solution Section */
+  .fitness-solution{
+    width: 100%;
+  }
+  .fitness-text h2 {
+      font-size: 1.5rem;
+  }
+  .fitness-text p {
+      font-size: 0.8rem;
+  }
+
+  /* About Section */
+  .about-text h1 {
+      font-size: 1.5rem;
+  }
+  .about-text p {
+      font-size: 0.8rem;
+  }
+
+  /* Trainers Section */
+  .trainers{
+    width: 100%;
+  }
+  .trainer-card h3 {
+      font-size: 1rem;
+  }
+  .trainer-card p {
+      font-size: 0.8rem;
+  }
+
+  /* Review Section */
+  .cutomers{
+    width: 100%;
+  }
+  .box h2 {
+      font-size: 1rem;
+  }
+  .box p {
+      font-size: 0.8rem;
+  }
+  /* Call to Action Section */
+  .cta h2 {
+      font-size: 1.5rem;
+  }
+  .cta .btn {
+      font-size: 0.9rem;
+  }
+
+  /* Footer Section */
+  footer{
+    text-align: center;
+  }
+  .footer-logo h3 {
+      font-size: 1.5rem;
+  }
+  .footer-info li {
+      font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 360px) {
+  /* Header */
+  .logo {
+      font-size: 1.2rem;
+  }
+  .navbar li a {
+      font-size: 0.8rem;
+  }
+
+  /* Hero Section */
+  .hero-text h1 {
+      font-size: 1.5rem;
+  }
+  .hero-text p {
+      font-size: 0.8rem;
+  }
+
+  /* Features Section */
+  .features .feature {
+      font-size: 0.7rem;
+  }
+
+  /* Fitness Solution Section */
+  .fitness-text h2 {
+      font-size: 1.2rem;
+  }
+  .fitness-text p {
+      font-size: 0.7rem;
+  }
+
+  /* About Section */
+  .about-text h1 {
+      font-size: 1.2rem;
+  }
+  .about-text p {
+      font-size: 0.7rem;
+  }
+
+  /* Trainers Section */
+  .trainer-card h3 {
+      font-size: 0.9rem;
+  }
+  .trainer-card p {
+      font-size: 0.7rem;
+  }
+
+  /* Review Section */
+  .box h2 {
+      font-size: 0.9rem;
+  }
+  .box p {
+      font-size: 0.7rem;
+  }
+
+  /* Call to Action Section */
+  .cta h2 {
+      font-size: 1.2rem;
+  }
+  .cta .btn {
+      font-size: 0.8rem;
+  }
+  /* Footer Section */
+  .footer-logo h3 {
+      font-size: 1.2rem;
+  }
+  .footer-info li {
+      font-size: 0.8rem;
+  }
+}
